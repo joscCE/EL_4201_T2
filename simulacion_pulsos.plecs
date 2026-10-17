@@ -6,10 +6,10 @@ Plecs {
   TimeSpan      "1.0"
   Timeout       ""
   Solver        "auto"
-  MaxStep       "1e-4"
+  MaxStep       "1e-5"
   InitStep      "-1"
   FixedStep     "1e-3"
-  Refine        "1"
+  Refine        "4"
   ZCStepSize    "1e-9"
   RelTol        "1e-3"
   AbsTol        "-1"
@@ -71,8 +71,8 @@ Plecs {
   InvalidNetlistFunctionEvaluationMsg "1"
   IncompatibleInitialConditionMsg "2"
   Schematic {
-    Location      [0, 0; 1119, 740]
-    ZoomFactor    1
+    Location      [0, 0; 1444, 956]
+    ZoomFactor    1.14437
     SliderPosition [0, 0]
     ShowBrowser   off
     BrowserWidth  100
@@ -80,7 +80,7 @@ Plecs {
       Type          Resistor
       Name          "R1"
       Show          on
-      Position      [720, 275]
+      Position      [690, 290]
       Direction     up
       Flipped       off
       LabelPosition east
@@ -94,7 +94,7 @@ Plecs {
       Type          ACVoltageSource
       Name          "V_ac"
       Show          on
-      Position      [170, 240]
+      Position      [140, 235]
       Direction     left
       Flipped       on
       LabelPosition south
@@ -115,77 +115,10 @@ Plecs {
       }
     }
     Component {
-      Type          Voltmeter
-      Name          "Vm1"
-      Show          on
-      Position      [795, 310]
-      Direction     up
-      Flipped       off
-      LabelPosition west
-    }
-    Component {
-      Type          Scope
-      Name          "Scope"
-      Show          on
-      Position      [900, 310]
-      Direction     up
-      Flipped       off
-      LabelPosition south
-      Frame         [-15, -15; 15, 15]
-      Location      [0, 0; 556, 762]
-      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
-"G0AQQByAGUAYQAAAAAA/////wAAADEA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAIsAAAAY/w"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAAiwAAABEAP///wAAAiwAAAJyAAAA"
-"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
-"AAAAA=="
-      SavedViews    "AAAAAgAAAAA="
-      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":186,\"Labels\":[\""
-"Delta\",\"Mean\",\"RMS\",\"THD\"],\"VisualIdxs\":[3,8,9,10]}"
-      PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-      Axes          "1"
-      TimeRange     "0"
-      ScrollingMode "1"
-      SingleTimeAxis "1"
-      Open          "0"
-      Ts            "-1"
-      SampleLimit   "0"
-      XAxisLabel    ""
-      ShowLegend    "1"
-      Axis {
-        Name          ""
-        AutoScale     1
-        MinValue      0
-        MaxValue      1
-        Signals       {}
-        SignalTypes   [ ]
-        Untangle      0
-        KeepBaseline  off
-        BaselineValue 0
-      }
-      Fourier {
-        SingleXAxis       on
-        AxisLabel         "Frequency"
-        Scaling           0
-        PhaseDisplay      0
-        ShowFourierLegend off
-        Axis {
-          Name          ""
-          AutoScale     1
-          MinValue      0
-          MaxValue      1
-          Signals       {}
-          Untangle      0
-          KeepBaseline  off
-          BaselineValue 0
-        }
-      }
-    }
-    Component {
       Type          ACVoltageSource
       Name          "V_ac1"
       Show          on
-      Position      [170, 305]
+      Position      [140, 300]
       Direction     left
       Flipped       on
       LabelPosition south
@@ -209,7 +142,7 @@ Plecs {
       Type          ACVoltageSource
       Name          "V_ac2"
       Show          on
-      Position      [170, 370]
+      Position      [140, 365]
       Direction     left
       Flipped       on
       LabelPosition south
@@ -233,7 +166,7 @@ Plecs {
       Type          Diode
       Name          "D1"
       Show          on
-      Position      [525, 220]
+      Position      [495, 215]
       Direction     down
       Flipped       off
       LabelPosition east
@@ -282,7 +215,7 @@ Plecs {
       Type          Diode
       Name          "D2"
       Show          on
-      Position      [580, 220]
+      Position      [550, 215]
       Direction     down
       Flipped       off
       LabelPosition east
@@ -331,7 +264,7 @@ Plecs {
       Type          Diode
       Name          "D3"
       Show          on
-      Position      [635, 220]
+      Position      [605, 215]
       Direction     down
       Flipped       off
       LabelPosition east
@@ -380,7 +313,7 @@ Plecs {
       Type          Diode
       Name          "D4"
       Show          on
-      Position      [525, 415]
+      Position      [495, 410]
       Direction     down
       Flipped       off
       LabelPosition east
@@ -429,7 +362,7 @@ Plecs {
       Type          Diode
       Name          "D5"
       Show          on
-      Position      [580, 415]
+      Position      [550, 410]
       Direction     down
       Flipped       off
       LabelPosition east
@@ -478,7 +411,7 @@ Plecs {
       Type          Diode
       Name          "D6"
       Show          on
-      Position      [635, 415]
+      Position      [605, 410]
       Direction     down
       Flipped       off
       LabelPosition east
@@ -527,7 +460,7 @@ Plecs {
       Type          Transformer
       Name          "Tr2"
       Show          on
-      Position      [325, 255]
+      Position      [295, 250]
       Direction     right
       Flipped       on
       LabelPosition south
@@ -561,7 +494,7 @@ Plecs {
       Type          Transformer
       Name          "Tr3"
       Show          on
-      Position      [325, 325]
+      Position      [295, 320]
       Direction     right
       Flipped       on
       LabelPosition south
@@ -595,7 +528,7 @@ Plecs {
       Type          Transformer
       Name          "Tr4"
       Show          on
-      Position      [325, 395]
+      Position      [295, 390]
       Direction     right
       Flipped       on
       LabelPosition south
@@ -629,7 +562,7 @@ Plecs {
       Type          Inductor
       Name          "L1"
       Show          on
-      Position      [425, 240]
+      Position      [395, 235]
       Direction     left
       Flipped       off
       LabelPosition north
@@ -648,7 +581,7 @@ Plecs {
       Type          Inductor
       Name          "L2"
       Show          on
-      Position      [425, 310]
+      Position      [395, 305]
       Direction     left
       Flipped       off
       LabelPosition north
@@ -667,7 +600,7 @@ Plecs {
       Type          Inductor
       Name          "L3"
       Show          on
-      Position      [425, 380]
+      Position      [395, 375]
       Direction     left
       Flipped       off
       LabelPosition north
@@ -686,7 +619,7 @@ Plecs {
       Type          Inductor
       Name          "L4"
       Show          on
-      Position      [720, 355]
+      Position      [690, 375]
       Direction     down
       Flipped       off
       LabelPosition west
@@ -701,43 +634,207 @@ Plecs {
         Show          off
       }
     }
+    Component {
+      Type          Voltmeter
+      Name          "Vm1"
+      Show          on
+      Position      [750, 315]
+      Direction     up
+      Flipped       off
+      LabelPosition west
+    }
+    Component {
+      Type          Voltmeter
+      Name          "Vm2"
+      Show          on
+      Position      [180, 270]
+      Direction     up
+      Flipped       off
+      LabelPosition west
+    }
+    Component {
+      Type          Ammeter
+      Name          "Am1"
+      Show          on
+      Position      [690, 225]
+      Direction     up
+      Flipped       off
+      LabelPosition west
+    }
+    Component {
+      Type          Scope
+      Name          "Scope"
+      Show          on
+      Position      [955, 250]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-15, -25; 15, 25]
+      Location      [0, 0; 1920, 988]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAC0AAACuPwCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAAKkA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAA1AA"
+"AC9AAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAANQAAArgAAABjAP///wAAAAMAAAeAAAAAV/w"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAB4AAAABEAP///wAAB4AAAANgAAAA"
+"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
+"AAAAA=="
+      SavedViews    "AAAAAgAAAAIAAAAYAFMAYQB2AGUAZAAgAHYAaQBlAHcAIAAxP6ha2hlzE"
+"ew/xjvt8GbkfwAAAAQBwGLAAAAAAABAYoRfZ1qiMAB/+AAAAAAAAH/4AAAAAAAAAH/4AAAAAAAAf/"
+"gAAAAAAAAAf/gAAAAAAAB/+AAAAAAAAAE/wOoxuh+5HD/L7+IVJWoDAAAAABgAUwBhAHYAZQBkACA"
+"AdgBpAGUAdwAgADI/qFraGXMR7D/GO+3wZuR/AAAABAHAYsAAAAAAAEBihF9nWqIwAH/4AAAAAAAA"
+"f/gAAAAAAAAAf/gAAAAAAAB/+AAAAAAAAAB/+AAAAAAAAH/4AAAAAAAAAT/A6jG6H7kcP8vv4hUla"
+"gMA"
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":186,\"Labels\":[\""
+"Delta\",\"Min\",\"Max\",\"Mean\",\"RMS\",\"THD\"],\"VisualIdxs\":[3,5,6,8,9,1"
+"0]}"
+      PlotPalettes  "AAAAAQAAAAEAAAABAAAAAQAAAAEB/////wAAAAAAAAAAAAEAAAABAQAAA"
+"AEAAAABAAAAAQAAAAEAAAABAAAAAAEAAAABQAgAAAAAAAAAAAABAAAAAQEAAAABAAAAAQAAAAEAAA"
+"ABAf//AAAAAP//AAAAAAABAAAAAQEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAABAAAAAUAIAAAAAAA"
+"AAAAAAQAAAAEBAAAAAQAAAAEAAAABAAAAAQH/////qqoAAAAAAAAAAQAAAAEBAAAAAQAAAAEAAAAB"
+"AAAAAQAAAAEAAAAAAQAAAAFACAAAAAAAAAAAAAEAAAABAQAAAAEAAAABAAAAAQAAAAEB//+qqgAA/"
+"/8AAAAAAAEAAAABAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAAEAAAABQAgAAAAAAAAAAAABAAAAAQ"
+"E="
+      Axes          "4"
+      TimeRange     "0"
+      ScrollingMode "1"
+      SingleTimeAxis "1"
+      Open          "0"
+      Ts            "-1"
+      SampleLimit   "0"
+      XAxisLabel    "Time / s"
+      ShowLegend    "1"
+      Axis {
+        Name          "VL-L"
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          "Vo"
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          "IL"
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          "Io"
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Fourier {
+        SingleXAxis       on
+        AxisLabel         "Frequency / Hz"
+        Scaling           0
+        PhaseDisplay      0
+        ShowFourierLegend off
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+      }
+    }
+    Component {
+      Type          Ammeter
+      Name          "Am2"
+      Show          on
+      Position      [460, 270]
+      Direction     left
+      Flipped       off
+      LabelPosition south
+    }
     Connection {
       Type          Wire
       SrcComponent  "V_ac"
       SrcTerminal   2
-      Points        [125, 240; 125, 305]
+      Points        [95, 235; 95, 300]
       Branch {
         DstComponent  "V_ac1"
         DstTerminal   2
       }
       Branch {
-        Points        [125, 370]
+        Points        [95, 365]
         DstComponent  "V_ac2"
         DstTerminal   2
       }
     }
     Connection {
       Type          Wire
-      SrcComponent  "R1"
-      SrcTerminal   1
-      Points        [720, 190]
+      SrcComponent  "D1"
+      SrcTerminal   2
+      Points        [495, 185; 550, 185]
       Branch {
-        Points        [795, 190]
-        DstComponent  "Vm1"
-        DstTerminal   1
-      }
-      Branch {
-        Points        [635, 190]
+        Points        [605, 185]
         Branch {
-          Points        [580, 190]
+          Points        [690, 185]
           Branch {
-            Points        [525, 190]
-            DstComponent  "D1"
-            DstTerminal   2
+            DstComponent  "Am1"
+            DstTerminal   1
           }
           Branch {
-            DstComponent  "D2"
-            DstTerminal   2
+            Points        [750, 185]
+            DstComponent  "Vm1"
+            DstTerminal   1
           }
         }
         Branch {
@@ -745,28 +842,28 @@ Plecs {
           DstTerminal   2
         }
       }
+      Branch {
+        DstComponent  "D2"
+        DstTerminal   2
+      }
     }
     Connection {
       Type          Wire
-      SrcComponent  "Vm1"
-      SrcTerminal   2
-      Points        [795, 450; 720, 450]
+      SrcComponent  "D4"
+      SrcTerminal   1
+      Points        [495, 445; 550, 445]
       Branch {
-        DstComponent  "L4"
-        DstTerminal   1
-      }
-      Branch {
-        Points        [635, 450]
+        Points        [605, 445]
         Branch {
-          Points        [580, 450]
+          Points        [690, 445]
           Branch {
-            Points        [525, 450]
-            DstComponent  "D4"
+            DstComponent  "L4"
             DstTerminal   1
           }
           Branch {
-            DstComponent  "D5"
-            DstTerminal   1
+            Points        [750, 445]
+            DstComponent  "Vm1"
+            DstTerminal   2
           }
         }
         Branch {
@@ -774,25 +871,29 @@ Plecs {
           DstTerminal   1
         }
       }
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "Vm1"
-      SrcTerminal   3
-      DstComponent  "Scope"
-      DstTerminal   1
+      Branch {
+        DstComponent  "D5"
+        DstTerminal   1
+      }
     }
     Connection {
       Type          Wire
-      SrcComponent  "V_ac"
+      SrcComponent  "Tr2"
       SrcTerminal   1
-      Points        [240, 240]
+      Points        [210, 235]
       Branch {
-        DstComponent  "Tr2"
-        DstTerminal   1
+        Points        [180, 235]
+        Branch {
+          DstComponent  "V_ac"
+          DstTerminal   1
+        }
+        Branch {
+          DstComponent  "Vm2"
+          DstTerminal   1
+        }
       }
       Branch {
-        Points        [240, 410]
+        Points        [210, 405]
         DstComponent  "Tr4"
         DstTerminal   2
       }
@@ -801,24 +902,31 @@ Plecs {
       Type          Wire
       SrcComponent  "Tr2"
       SrcTerminal   2
-      Points        [280, 270; 280, 305]
+      Points        [250, 265; 250, 300]
       Branch {
-        Points        [280, 310]
+        Points        [250, 305]
         DstComponent  "Tr3"
         DstTerminal   1
       }
       Branch {
-        DstComponent  "V_ac1"
-        DstTerminal   1
+        Points        [180, 300]
+        Branch {
+          DstComponent  "V_ac1"
+          DstTerminal   1
+        }
+        Branch {
+          DstComponent  "Vm2"
+          DstTerminal   2
+        }
       }
     }
     Connection {
       Type          Wire
       SrcComponent  "Tr3"
       SrcTerminal   2
-      Points        [285, 340; 285, 370]
+      Points        [255, 335; 255, 365]
       Branch {
-        Points        [285, 380]
+        Points        [255, 375]
         DstComponent  "Tr4"
         DstTerminal   1
       }
@@ -831,13 +939,13 @@ Plecs {
       Type          Wire
       SrcComponent  "Tr2"
       SrcTerminal   3
-      Points        [390, 240]
+      Points        [360, 235]
       Branch {
         DstComponent  "L1"
         DstTerminal   1
       }
       Branch {
-        Points        [390, 410]
+        Points        [360, 405]
         DstComponent  "Tr4"
         DstTerminal   4
       }
@@ -846,14 +954,13 @@ Plecs {
       Type          Wire
       SrcComponent  "D1"
       SrcTerminal   1
-      Points        [525, 275]
+      Points        [495, 270]
       Branch {
         DstComponent  "D4"
         DstTerminal   2
       }
       Branch {
-        Points        [460, 275; 460, 240]
-        DstComponent  "L1"
+        DstComponent  "Am2"
         DstTerminal   2
       }
     }
@@ -861,7 +968,7 @@ Plecs {
       Type          Wire
       SrcComponent  "D2"
       SrcTerminal   1
-      Points        [580, 310]
+      Points        [550, 305]
       Branch {
         DstComponent  "D5"
         DstTerminal   2
@@ -873,12 +980,12 @@ Plecs {
     }
     Connection {
       Type          Wire
-      SrcComponent  "D3"
-      SrcTerminal   1
-      Points        [635, 380]
+      SrcComponent  "D6"
+      SrcTerminal   2
+      Points        [605, 375]
       Branch {
-        DstComponent  "D6"
-        DstTerminal   2
+        DstComponent  "D3"
+        DstTerminal   1
       }
       Branch {
         DstComponent  "L3"
@@ -896,13 +1003,13 @@ Plecs {
       Type          Wire
       SrcComponent  "Tr3"
       SrcTerminal   3
-      Points        [360, 310]
+      Points        [330, 305]
       Branch {
         DstComponent  "L2"
         DstTerminal   1
       }
       Branch {
-        Points        [360, 270]
+        Points        [330, 265]
         DstComponent  "Tr2"
         DstTerminal   4
       }
@@ -911,16 +1018,62 @@ Plecs {
       Type          Wire
       SrcComponent  "Tr4"
       SrcTerminal   3
-      Points        [365, 380]
+      Points        [335, 375]
       Branch {
         DstComponent  "L3"
         DstTerminal   1
       }
       Branch {
-        Points        [365, 340]
+        Points        [335, 335]
         DstComponent  "Tr3"
         DstTerminal   4
       }
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "R1"
+      SrcTerminal   1
+      DstComponent  "Am1"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Vm2"
+      SrcTerminal   3
+      Points        [195, 160; 825, 160; 825, 235]
+      DstComponent  "Scope"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Vm1"
+      SrcTerminal   3
+      Points        [825, 315; 825, 245]
+      DstComponent  "Scope"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Am1"
+      SrcTerminal   3
+      Points        [705, 265]
+      DstComponent  "Scope"
+      DstTerminal   4
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "L1"
+      SrcTerminal   2
+      Points        [430, 235; 430, 270]
+      DstComponent  "Am2"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Am2"
+      SrcTerminal   3
+      DstComponent  "Scope"
+      DstTerminal   3
     }
   }
 }
