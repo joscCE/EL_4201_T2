@@ -1,17 +1,16 @@
 % =========================================================================
-% SIMULACIÓN EN MATLAB A PARTIR DEL ARCHIVO 
+% SIMULACIÓN DE CORRIENTES
 % =========================================================================
 clear; clc; close all;
 
-% 1. Cargar el archivo Excel generado 
-% Se omiten las primeras 25 filas del encabezado
-opts = detectImportOptions('Iload_60V.xlsx', 'NumHeaderLines', 25);
-datos = readmatrix('Iload_60V.xlsx', opts);
+%Colocar el nombre los archivos a simular
+opts = detectImportOptions('Iload_60V.CSV', 'NumHeaderLines', 25);
+datos = readmatrix('Iload_60V.CSV', opts);
 
 t = datos(:, 1);  
 i = datos(:, 2);  
 
-% 2. Cálculo de parámetros directamente desde los datos cargados
+
 I_rms  = sqrt(mean(i.^2));
 I_max  = max(i);
 I_min  = min(i);
