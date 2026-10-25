@@ -71,7 +71,7 @@ Plecs {
   InvalidNetlistFunctionEvaluationMsg "1"
   IncompatibleInitialConditionMsg "2"
   Schematic {
-    Location      [0, 0; 1444, 956]
+    Location      [0, 23; 1280, 677]
     ZoomFactor    1.14437
     SliderPosition [0, 0]
     ShowBrowser   off
@@ -100,7 +100,7 @@ Plecs {
       LabelPosition south
       Parameter {
         Variable      "V"
-        Value         "60*sqrt(2)"
+        Value         "30*sqrt(2)"
         Show          off
       }
       Parameter {
@@ -124,7 +124,7 @@ Plecs {
       LabelPosition south
       Parameter {
         Variable      "V"
-        Value         "60*sqrt(2)"
+        Value         "30*sqrt(2)"
         Show          off
       }
       Parameter {
@@ -148,7 +148,7 @@ Plecs {
       LabelPosition south
       Parameter {
         Variable      "V"
-        Value         "60*sqrt(2)"
+        Value         "30*sqrt(2)"
         Show          off
       }
       Parameter {
@@ -670,11 +670,11 @@ Plecs {
       Flipped       off
       LabelPosition south
       Frame         [-15, -25; 15, 25]
-      Location      [0, 0; 1920, 988]
-      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAC0AAACuPwCAAAAA/sAAAAQAFoAbwBvA"
-"G0AQQByAGUAYQAAAAAA/////wAAAKkA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAA1AA"
-"AC9AAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAANQAAArgAAABjAP///wAAAAMAAAeAAAAAV/w"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAB4AAAABEAP///wAAB4AAAANgAAAA"
+      Location      [0, 23; 1280, 699]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAC0AAABvfwCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAAKgA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAA1AA"
+"AC9AAAAGIA////+wAAAAwAVAByAGEAYwBlAHMBAAAANAAAAb0AAABiAP///wAAAAMAAAUAAAAAwvw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABQAAAABEAP///wAABEYAAAG9AAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAIAAAAYAFMAYQB2AGUAZAAgAHYAaQBlAHcAIAAxP6ha2hlzE"
@@ -683,9 +683,9 @@ Plecs {
 "AdgBpAGUAdwAgADI/qFraGXMR7D/GO+3wZuR/AAAABAHAYsAAAAAAAEBihF9nWqIwAH/4AAAAAAAA"
 "f/gAAAAAAAAAf/gAAAAAAAB/+AAAAAAAAAB/+AAAAAAAAH/4AAAAAAAAAT/A6jG6H7kcP8vv4hUla"
 "gMA"
-      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":186,\"Labels\":[\""
-"Delta\",\"Min\",\"Max\",\"Mean\",\"RMS\",\"THD\"],\"VisualIdxs\":[3,5,6,8,9,1"
-"0]}"
+      HeaderState   "{\"DefaultSecSize\":100,\"FirstSecSize\":179,\"Labels\":["
+"\"Delta\",\"Min\",\"Max\",\"Mean\",\"RMS\",\"THD\"],\"VisualIdxs\":[3,5,6,8,9"
+",10]}"
       PlotPalettes  "AAAAAQAAAAEAAAABAAAAAQAAAAEB/////wAAAAAAAAAAAAEAAAABAQAAA"
 "AEAAAABAAAAAQAAAAEAAAABAAAAAAEAAAABQAgAAAAAAAAAAAABAAAAAQEAAAABAAAAAQAAAAEAAA"
 "ABAf//AAAAAP//AAAAAAABAAAAAQEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAABAAAAAUAIAAAAAAA"
@@ -697,7 +697,7 @@ Plecs {
       TimeRange     "0"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "0"
+      Open          "1"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    "Time / s"
@@ -803,14 +803,89 @@ Plecs {
       Flipped       off
       LabelPosition south
     }
+    Component {
+      Type          Voltmeter
+      Name          "Vm3"
+      Show          on
+      Position      [140, 165]
+      Direction     right
+      Flipped       off
+      LabelPosition north
+    }
+    Component {
+      Type          Scope
+      Name          "Scope1"
+      Show          on
+      Position      [360, 85]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-15, -15; 15, 15]
+      Location      [0, 24; 1280, 700]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAADAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAUAAAAAYvw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABQAAAABEAP///wAABQAAAAIdAAAA"
+"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
+"AAAAA=="
+      SavedViews    "AAAAAgAAAAA="
+      HeaderState   "{\"DefaultSecSize\":100,\"FirstSecSize\":179,\"Labels\":["
+"\"RMS\"],\"VisualIdxs\":[9]}"
+      PlotPalettes  "AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      Axes          "1"
+      TimeRange     "0.0"
+      ScrollingMode "1"
+      SingleTimeAxis "1"
+      Open          "0"
+      Ts            "-1"
+      SampleLimit   "0"
+      XAxisLabel    "Time / s"
+      ShowLegend    "1"
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Fourier {
+        SingleXAxis       on
+        AxisLabel         "Frequency / Hz"
+        Scaling           0
+        PhaseDisplay      0
+        ShowFourierLegend off
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+      }
+    }
     Connection {
       Type          Wire
-      SrcComponent  "V_ac"
+      SrcComponent  "V_ac1"
       SrcTerminal   2
-      Points        [95, 235; 95, 300]
+      Points        [95, 300]
       Branch {
-        DstComponent  "V_ac1"
-        DstTerminal   2
+        Points        [95, 235]
+        Branch {
+          DstComponent  "V_ac"
+          DstTerminal   2
+        }
+        Branch {
+          Points        [95, 165]
+          DstComponent  "Vm3"
+          DstTerminal   2
+        }
       }
       Branch {
         Points        [95, 365]
@@ -889,6 +964,11 @@ Plecs {
         }
         Branch {
           DstComponent  "Vm2"
+          DstTerminal   1
+        }
+        Branch {
+          Points        [180, 165]
+          DstComponent  "Vm3"
           DstTerminal   1
         }
       }
@@ -1074,6 +1154,14 @@ Plecs {
       SrcTerminal   3
       DstComponent  "Scope"
       DstTerminal   3
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Vm3"
+      SrcTerminal   3
+      Points        [110, 180; 110, 115; 235, 115; 235, 85]
+      DstComponent  "Scope1"
+      DstTerminal   1
     }
   }
 }
